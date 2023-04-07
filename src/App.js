@@ -410,10 +410,7 @@ function App(){
        type="text"/>
       
       <button onClick={handleInput}>handle dom input</button>
-      </>
-  )
-}
-export default App;
+      <
 
 */
 
