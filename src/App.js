@@ -106,7 +106,10 @@ function App() {
 
 
 
-  /* using Async await & (try & catch) */
+  /* using Async await & (try & catch) 
+
+
+  //https://codesandbox.io/s/adoring-ardinghelli-9cb81g?file=/src/App.js
 
   // make arrow  or simple function with async
       const getData = async () => {
@@ -136,5 +139,6 @@ function App() {
   );
 }
 export default App;
+*/
 
 
