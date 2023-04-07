@@ -74,12 +74,14 @@ export default App;
 
 
 //method 2&3 
-1) using promises ---> .then & catch
-2) using Async await (try & catch)
+ 1) using promises ---> .then & catch
+ 2) using Async await (try & catch)
 
-//https://codesandbox.io/s/stoic-wave-cgptki?file=/src/App.js
+ //https://codesandbox.io/s/stoic-wave-cgptki?file=/src/App.js
+
 
 //axios using promises
+
 
 import React, { useState, useEffect } from "react";
 import axios from "axios";
@@ -93,27 +95,29 @@ function App() {
   /*using promises ---> .then & catch
    useEffect(()=>{
    axios
-   .get("https://jsonplaceholder.typicode.com/posts")
-   .then((res)=>setDatas(res.data))
-   //res.data is in form of array ,
-   //then to store this ddata, use array inside useState
+    .get("https://jsonplaceholder.typicode.com/posts")
+    .then((res)=>setDatas(res.data))
+    //res.data is in form of array ,
+    //then to store this ddata, use array inside useState
     .catch((error)=>setIsError(error.message))
 
    },[]);
-*/
+   */
 
-  /* using Async await (try & catch) */
 
-  //make arrow  or simple function with async
-  const getData = async () => {
-    try {
-      const res = await axios.get("https://jsonpaceholder.typicode.com/posts");
-      setDatas(res.data);
-    } catch (error) {
-      setIsError(error.message);
-      }
-    };
-useEffect(() => { getData(); }, []);
+
+  /* using Async await & (try & catch) */
+
+  // make arrow  or simple function with async
+      const getData = async () => {
+         try {
+           const res = await axios.get("https://jsonpaceholder.typicode.com/posts");
+           setDatas(res.data);
+         }catch (error) {
+           setIsError(error.message);
+         }
+     };
+   useEffect(() => { getData()}, []);
 
   return (
     <>
