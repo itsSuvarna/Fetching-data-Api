@@ -1,5 +1,7 @@
 /*  simple axios method   */
 
+//to fetch diff data from api use --> backtick  `  `  
+// & to search diff value use this ${}. Pass values from input in${}
 //  setvalue from axios which not arr or object.
 //  it is simply single value after console.log
 //  as same as in console.log(res.data.name) gives single value
