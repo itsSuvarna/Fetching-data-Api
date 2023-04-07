@@ -1,11 +1,13 @@
 /*  simple axios method   */
 
+//by using axios we can performs curd operations
+
 //after getting data check in which form by using console
 //if it in arrays,then to store this data, use array inside useState
 
 
 
-//to fetch diff data from api use --> backtick  `  `  
+//to fetch diff data from api use ---> backtick  `  `  
 // & to search diff value use this ${}. Pass values from input in${}
 //  setvalue from axios which not arr or object.
 //  it is simply single value after console.log
