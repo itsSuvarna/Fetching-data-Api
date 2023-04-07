@@ -6,6 +6,22 @@
 //if it in arrays,then to store this data, use array inside useState
 
 
+//afeter getting data in useState array 
+//https://codesandbox.io/s/cranky-platform-wxfxpj?file=/src/App.js
+//use map 
+//make make variable const {id,title,body,etc all present things present in arrays} = post ;
+/* eg.
+{datas.map((post)=>{
+        const {id,title,body} = post;
+        return(
+          <div key={id}>
+            <h1>{title}</h1>
+            <p>{body}</p>
+          </div>
+        )
+/*
+
+
 
 //to fetch diff data from api use ---> backtick  `  `  
 // & to search diff value use this ${}. Pass values from input in${}
